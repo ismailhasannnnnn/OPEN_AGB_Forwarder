@@ -10,7 +10,7 @@ public class Main {
         JFrame frame = new JFrame("Forwarder");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setContentPane(new Panel().panel1);
-        frame.setSize(800, 450);
+        frame.setSize(531, 377);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
