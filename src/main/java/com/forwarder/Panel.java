@@ -5,6 +5,8 @@ import com.googlecode.vfsjfilechooser2.VFSJFileChooser;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.io.File;
 
 public class Panel {
@@ -13,15 +15,21 @@ public class Panel {
     private JLabel romPathLabel;
     private JButton selectROMButton;
     private JTextField bannerPath;
-    private JButton selectBannerButton;
     private JTextField textField1;
-    private JButton selectIconButton;
     private JButton generateButton;
 
     public Panel() {
-        selectROMButton.addActionListener(new ActionListener() {
+
+        romPath.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
+
+            }
+        });
+        romPath.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
                 VFSJFileChooser fileChooser = new VFSJFileChooser();
                 fileChooser.setFileHidingEnabled(false);
                 fileChooser.setMultiSelectionEnabled(false);
@@ -31,15 +39,19 @@ public class Panel {
                 File rom = fileChooser.getSelectedFile();
                 String romPathString = "";
                 // check if the path of the rom contains "roms", and modify the path to start with "sdmc:/roms"
-                if (rom.getAbsolutePath().contains("roms")) {
-                    romPathString = "sdmc:/" + rom.getAbsolutePath().substring(rom.getAbsolutePath().indexOf("roms"));
-                } else {
-                    // alert user that the path needs to contain "roms"
-                    JOptionPane.showMessageDialog(null, "The path of the ROM must contain \"roms\".");
+                try {
+                    if (rom.getAbsolutePath().contains("roms")) {
+                        romPathString = "sdmc:/" + rom.getAbsolutePath().substring(rom.getAbsolutePath().indexOf("roms"));
+                    } else {
+                        // alert user that the path needs to contain "roms"
+                        JOptionPane.showMessageDialog(null, "The path of the ROM must contain \"roms\".");
+                        return;
+                    }
+                } catch (NullPointerException exception) {
+                    // user didn't select a file
                     return;
                 }
                 romPath.setText(romPathString);
-
             }
         });
     }

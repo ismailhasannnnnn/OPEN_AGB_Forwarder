@@ -9,11 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="518b5b72-6247-4e3c-a5dc-1b2faddfac1f" name="Changes" comment="Add new project files and configurations&#10;&#10;Added project configuration files, such as vcs.xml, uiDesigner.xml, and artifacts configuration. Also, included new Java source files, specifically Main.java. These changes are necessary to set up the project's essential details like VCS mappings, UI design settings, build artifacts, and initial Java classes.">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="518b5b72-6247-4e3c-a5dc-1b2faddfac1f" name="Changes" comment="Update UI layout and project configuration files&#10;&#10;Amended the layout positioning in the UI designer and updated the default Java frame size. Also improved the organization in the project configuration files for a more efficient project setup.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/forwarder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forwarder/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/forwarder/Panel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forwarder/Panel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forwarder/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forwarder/Panel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +89,18 @@
       <workItem from="1704834576241" duration="315000" />
       <workItem from="1704835103110" duration="4348000" />
       <workItem from="1704839459144" duration="837000" />
-      <workItem from="1704842885476" duration="1663000" />
+      <workItem from="1704842885476" duration="3866000" />
+      <workItem from="1704930654613" duration="2075000" />
     </task>
+    <task id="LOCAL-00001" summary="Update UI layout and project configuration files&#10;&#10;Amended the layout positioning in the UI designer and updated the default Java frame size. Also improved the organization in the project configuration files for a more efficient project setup.">
+      <option name="closed" value="true" />
+      <created>1704844628264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704844628264</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,5 +116,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add new project files and configurations&#10;&#10;Added project configuration files, such as vcs.xml, uiDesigner.xml, and artifacts configuration. Also, included new Java source files, specifically Main.java. These changes are necessary to set up the project's essential details like VCS mappings, UI design settings, build artifacts, and initial Java classes." />
+    <MESSAGE value="Update UI layout and project configuration files&#10;&#10;Amended the layout positioning in the UI designer and updated the default Java frame size. Also improved the organization in the project configuration files for a more efficient project setup." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update UI layout and project configuration files&#10;&#10;Amended the layout positioning in the UI designer and updated the default Java frame size. Also improved the organization in the project configuration files for a more efficient project setup." />
   </component>
 </project>

@@ -33,18 +33,6 @@
           <text value="Banner Path"/>
         </properties>
       </component>
-      <component id="4944b" class="javax.swing.JButton" binding="selectROMButton">
-        <constraints>
-          <grid row="2" column="12" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-        <properties>
-          <label value="Select ROM..."/>
-          <maximumSize width="20" height="30"/>
-          <minimumSize width="20" height="30"/>
-          <text value="Select ROM..."/>
-        </properties>
-      </component>
       <component id="a15d4" class="javax.swing.JTextField" binding="romPath">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="11" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
@@ -54,6 +42,10 @@
         </constraints>
         <properties>
           <editable value="false"/>
+          <requestFocusEnabled value="false"/>
+          <text value="Please select GBA rom from SD card..."/>
+          <toolTipText value=""/>
+          <verifyInputWhenFocusTarget value="false"/>
         </properties>
       </component>
       <component id="a25e1" class="javax.swing.JTextField" binding="bannerPath">
@@ -65,15 +57,7 @@
         </constraints>
         <properties>
           <editable value="false"/>
-        </properties>
-      </component>
-      <component id="cef95" class="javax.swing.JButton" binding="selectBannerButton" default-binding="true">
-        <constraints>
-          <grid row="6" column="12" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-        <properties>
-          <text value="Select Banner..."/>
+          <requestFocusEnabled value="false"/>
         </properties>
       </component>
       <component id="60597" class="javax.swing.JLabel">
@@ -111,15 +95,7 @@
         </constraints>
         <properties>
           <editable value="false"/>
-        </properties>
-      </component>
-      <component id="f83eb" class="javax.swing.JButton" binding="selectIconButton" default-binding="true">
-        <constraints>
-          <grid row="10" column="12" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-        <properties>
-          <text value="Select Icon..."/>
+          <requestFocusEnabled value="false"/>
         </properties>
       </component>
       <vspacer id="55077">
@@ -156,7 +132,7 @@
       </hspacer>
       <grid id="fd1a8" layout-manager="GridBagLayout">
         <constraints>
-          <grid row="13" column="1" row-span="3" col-span="12" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="13" column="1" row-span="3" col-span="11" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties/>
